@@ -18,8 +18,8 @@ _start:
     call    printint
     call    endl
     dec     r15
-    cmp     r15, -1
-    jne    .printar
+    cmp     r15, 0
+    jge   .printar
     call    exit0
 
 
